@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IZISOL - SERVICES</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+      body {
+        font-family: "Titillium Web", sans-serif;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+      }
+      .star {
+        width: 120px;
+        height: 120px;
+        background: #0e0e18; /* qora fon */
+        color: #b4ff4c; /* yashil raqam */
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(
+          50% 0%,
+          /* yuqori o'rtasi */ 70% 20%,
+          /* o'ng yuqori */ 100% 50%,
+          /* o'ng o'rtasi */ 70% 80%,
+          /* o'ng pastki */ 50% 100%,
+          /* past o'rtasi */ 30% 80%,
+          /* chap pastki */ 0% 50%,
+          /* chap o'rtasi */ 30% 20% /* chap yuqori */
+        );
+      }
+    </style>
+    <link rel="stylesheet" href="./style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-white/10 backdrop-blur-md border border-white/20 shadow-md sticky top-0 left-0 z-40"
+    >
+      <div
+        class="w-[90%] m-auto items-center flex justify-between py-3 sm:py-4"
+      >
+        <div class="header-left w-[20%] flex items-center gap-3">
+          <a href="./index.html">
+            <img
+              class="w-20"
+              src="./imges/izisolmini.png"
+              alt="Izisol company Logo"
+            />
+          </a>
+          <a href="./index.html">
+            <h2 class="text-3xl sm:text-4xl text-[#b9ff66] font-[600]">
+              IZISOL
+            </h2>
+          </a>
+        </div>
+
+        <div class="hader-right w-[70%] flex items-center justify-end gap-5">
+          <div
+            id="header_links"
+            class="header_links justify-center lg:justify-normal z-50 bg-[#a8e95ad4] lg:bg-transparent flex flex-col w-[100%] h-[100vh] lg:w-auto lg:h-auto items-center top-0 left-[-100%] transition-all duration-300 lg:flex-row gap-5 sm:gap-7 absolute lg:static"
+          >
+            <a
+              class="text-2xl sm:text-base md:text-lg lg:text-xl hover:text-[#b9ff66] transition-all duration-200"
+              href="./about.html"
+              >About us</a
+            >
+            <a
+              class="text-2xl sm:text-lg md:text-xl hover:text-[#b9ff66] transition-all duration-200"
+              href="./services.html"
+              >Services</a
+            >
+            <a
+              class="text-2xl sm:text-lg md:text-xl hover:text-[#b9ff66] transition-all duration-200"
+              href="#"
+              >Use Cases</a
+            >
+            <a
+              class="text-2xl sm:text-lg md:text-xl hover:text-[#b9ff66] transition-all duration-200"
+              href="#"
+              >Pricing</a
+            >
+            <a
+              class="text-2xl sm:text-lg md:text-xl hover:text-[#b9ff66] transition-all duration-200"
+              href="#"
+              >Blog</a
+            >
+            <button
+              class="w-[40%] sm:hidden sm:w-[30%] text-xs flex items-center justify-center md:w-[20%] sm:text-sm md::text-base rounded-[10px] h-10 sm:h-12 border border-[#000] hover:bg-[#b9ff66] transition-all duration-300"
+            >
+              Request a quote
+            </button>
+
+            <button
+              id="bars_close_btn"
+              class="flex lg:hidden absolute top-5 right-4 items-center justify-center h-10 w-10 rounded-md text-[#a0e150] text-lg sm:text-2xl bg-[#ecd9d97d]"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <button
+            class="w-[40%] sm:w-[30%] text-xs hidden sm:flex items-center justify-center md:w-[20%] sm:text-sm md::text-base rounded-[10px] h-10 sm:h-12 border border-[#000] hover:bg-[#b9ff66] transition-all duration-300"
+          >
+            Request a quote
+          </button>
+
+          <button
+            id="bars_open_btn"
+            class="flex lg:hidden items-center justify-center h-10 w-10 rounded-md text-[#b9ff66] text-lg sm:text-2xl bg-[#ecd9d957]"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Finish -->
+
+    <!-- Showcase about -->
+    <section class="showcase mt-[40px] sm:mt-[60px]">
+      <div
+        class="w-[90%] m-auto bg-[#f3f3f3] gap-4 sm:gap-5 rounded-[20px] flex flex-col sm:flex-row sm:justify-between items-center p-10"
+      >
+        <div class="showcase-left w-full sm:w-[37%] h-[300px] md:h-[400px]">
+          <img
+            class="w-full h-full"
+            src="./imges/services-showcase-left.png"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="showcase-right w-full sm:w-[40%] flex flex-col gap-3 sm:gap-6"
+        >
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black">
+            Expert Digital <br class="hidden sm:flex" />
+            Marketing <br class="hidden sm:flex" />
+            Services
+          </h2>
+          <h5 class="text-lg sm:text-xl md:text-2xl">
+            Unlock your business’s full potential with tailored strategies
+            designed to drive growth and deliver results.
+          </h5>
+        </div>
+      </div>
+    </section>
+    <!-- Showcase finish -->
+
+    <!-- Search optimise section start -->
+    <section class="mt-[40px] sm:mt-[70px]">
+      <div class="w-[90%] m-auto flex flex-col gap-3 sm:gap-9">
+        <div class="search-top flex items-center gap-5">
+          <button
+            class="w-8 h-8 rounded-[100%] bg-[#191a23] text-[#B9FF66] text-xl md:text-2xl"
+          >
+            <i class="fa-solid -rotate-[140deg] fa-arrow-right"></i>
+          </button>
+          <h4 class="text-lg sm:text-xl md:text-2xl font-[500]">Back</h4>
+        </div>
+
+        <div
+          class="search-bottom gap-4 flex flex-col lg:flex-row items-start justify-betweentiy bg-[#191a23] rounded-[30px] p-8"
+        >
+          <div class="botom-left w-full lg:w-[25%] flex items-start gap-4">
+            <img class="w-10 h-10" src="./imges/star22.png" alt="" />
+
+            <div class="flex flex-col">
+              <h3
+                class="bg-[#b9ff66] rounded-[10px] font-[600] px-1 text-xl sm:text-3xl w-fit flex items-center justify-center"
+              >
+                Search Engine
+              </h3>
+              <h3
+                class="bg-[#b9ff66] rounded-[10px] font-[600] px-1 text-xl sm:text-3xl w-fit flex items-center justify-center"
+              >
+                optimization
+              </h3>
+            </div>
+          </div>
+          <div class="botom-right w-full lg:w-[70%] flex flex-col gap-7">
+            <h3 class="text-base sm:text-lg md:text-xl text-white">
+              SEO is the process of improving your website's visibility on
+              search engines like Google. By optimizing your content and site
+              structure, we help your business rank higher in search results,
+              driving more organic traffic and potential customers.
+            </h3>
+
+            <button
+              class="h-16 bg-[#fff] w-full text-base sm:text-lg md:text-xl rounded-[10px]"
+            >
+              Boost My Rankings
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Search optimise section finish -->
+
+    <!-- How we work start -->
+    <section class="mt-[40px] sm:mt-[70px]">
+      <div class="w-[90%] m-auto flex flex-col gap-4 sm:gap-8">
+        <div class="howowork-top flex flex-col sm:flex-row gap-3 sm:gap-5">
+          <h3
+            class="bg-[#b9ff66] rounded-[10px] font-[600] px-1 text-xl sm:text-3xl h-fit py-2 w-fit flex items-center justify-center"
+          >
+            How We Work : SEO Procces
+          </h3>
+          <p class="text-lg sm:text-xl font">
+            Our step-by-step SEO process ensures your website
+            <br class="hidden sm:flex" />
+            ranks higher, attracts more traffic, and drives lasting
+            <br class="hidden sm:flex" />
+            results.
+          </p>
+        </div>
+
+        <div class="howowork-bottom flex flex-col  items-center gap-3 sm:gap-7">
+          <div
+            class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+          >
+
+          <div class="star hidden sm:flex w-[16%]">01</div>
+
+            <div class="flex flex-col gap-4 sm:gap-7">
+                <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Website Audit & Analysis </h3>
+                <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptates sunt ipsa adipisci architecto, dignissimos velit assumenda voluptatum autem laboriosam!</p>
+            </div>
+
+          </div>
+
+          <div
+          class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+        >
+
+        <div class="star hidden sm:flex w-[16%]">02</div>
+
+          <div class="flex flex-col gap-4 sm:gap-7">
+              <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Keyword Research & Strategy </h3>
+              <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">Our team researches the most relevant and high-impact keywords for your business, ensuring that we target terms that drive qualified traffic.</p>
+          </div>
+
+        </div>
+
+
+
+        <div
+        class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+      >
+
+      <div class="star hidden sm:flex w-[16%]">03</div>
+
+        <div class="flex flex-col gap-4 sm:gap-7">
+            <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">On-Page Optimization </h3>
+            <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">We optimize your website’s structure, meta tags, and content to make it search engine-friendly, improving your visibility and relevance.</p>
+        </div>
+
+      </div>
+
+
+
+      <div
+      class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+    >
+
+    <div class="star hidden sm:flex w-[16%]">04</div>
+
+      <div class="flex flex-col gap-4 sm:gap-7">
+          <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Content Creation & Optimization </h3>
+          <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">High-quality content is key to SEO. We create or refine content that engages your audience while aligning with search engine algorithms.</p>
+      </div>
+
+    </div>
+
+
+
+
+    <div
+    class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+  >
+
+  <div class="star hidden sm:flex w-[16%]">05</div>
+
+    <div class="flex flex-col gap-4 sm:gap-7">
+        <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Link Building </h3>
+        <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">We develop a link-building strategy to acquire authoritative, relevant backlinks that boost your domain authority and search rankings.</p>
+    </div>
+
+  </div>
+
+
+  <div
+  class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+>
+
+<div class="star hidden sm:flex w-[16%]">06</div>
+
+  <div class="flex flex-col gap-4 sm:gap-7">
+      <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Monitoring & Reporting </h3>
+      <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">We continuously monitor performance, track rankings, and provide detailed reports, making data-driven adjustments to maintain and improve your results.</p>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- How we work finish -->
+
+
+    <!-- Use cases start -->
+
+    <section class="mt-[40px] sm:mt-[70px] ">
+        <div class="w-[90%] m-auto">
+
+            <div class="usecases-top flex flex-col sm:flex-row gap-3 sm:gap-5">
+                <h3
+                  class="bg-[#b9ff66] rounded-[10px] font-[600] px-1 text-xl sm:text-3xl h-fit py-1 w-fit flex items-center justify-center"
+                >
+                  Use Cases
+                </h3>
+                <p class="text-lg sm:text-xl font">
+                    Explore Real-Life Examples of Our Proven Digital Marketing
+                  <br class="hidden sm:flex" />
+                  Success through Our Case Studies
+                </p>
+                 
+              </div>
+
+
+
+              <div class="Use-cases-bottom bg-[#191a23] rounded-[20px] p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+                <div class="usecases-item">
+                        <h3>E-commerce Fashion Brand</h3>
+                        <h5>We implemented a tailored SEO strategy that boosted organic search rankings, leading to a 150% increase in website traffic and a 50% rise in online sales within six months.
+                        </h5>
+                        <a href="#">Learn more </a>
+                </div>
+
+              </div>
+
+        </div>
+    </section>
+
+
+   
+
+
+  </body>
+</html>
