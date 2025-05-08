@@ -25,6 +25,28 @@
 
         padding: 10px;
       }
+
+      .star {
+        width: 120px;
+        height: 120px;
+        background: #0e0e18; /* qora fon */
+        color: #b4ff4c; /* yashil raqam */
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(
+          50% 0%,
+          /* yuqori o'rtasi */ 70% 20%,
+          /* o'ng yuqori */ 100% 50%,
+          /* o'ng o'rtasi */ 70% 80%,
+          /* o'ng pastki */ 50% 100%,
+          /* past o'rtasi */ 30% 80%,
+          /* chap pastki */ 0% 50%,
+          /* chap o'rtasi */ 30% 20% /* chap yuqori */
+        );
+      }
     </style>
     <link rel="stylesheet" href="./style/output.css" />
     <link
@@ -44,6 +66,7 @@
       <div
         class="w-[90%] m-auto items-center flex justify-between py-3 sm:py-4"
       >
+
         <div class="header-left w-[20%] flex items-center gap-3">
          <a href="./index.html"> <img
           class="w-20"
@@ -56,7 +79,7 @@
         </div>
 
         <div class="hader-right w-[70%] flex items-center justify-end gap-5">
-          <div
+          <!-- <div
             id="header_links"
             class="header_links justify-center lg:justify-normal z-50 bg-[#a8e95ad4] lg:bg-transparent flex flex-col w-[100%] h-[100vh] lg:w-auto lg:h-auto items-center top-0 left-[-100%] transition-all duration-300 lg:flex-row gap-5 sm:gap-7 absolute lg:static"
           >
@@ -97,7 +120,7 @@
             >
               <i class="fa-solid fa-xmark"></i>
             </button>
-          </div>
+          </div> -->
 
           <button
             class="w-[40%] sm:w-[30%] text-xs hidden sm:flex items-center justify-center md:w-[20%] sm:text-sm md::text-base rounded-[10px] h-10 sm:h-12 border border-[#000] hover:bg-[#b9ff66] transition-all duration-300"
@@ -112,11 +135,16 @@
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
+
+
+
+
+        
       </div>
     </header>
 
     <section
-      id="your-element-selecto"
+      id="your-element-selector"
       class="showcase h-auto sm:h-[617px] relative z-0 overflow-x-hidden"
     >
       <div
@@ -126,13 +154,12 @@
           class="showcase-left w-full md:w-[40%] flex flex-col gap-6 md:gap-16"
         >
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-            Navigating the digital landscape for success
+            Mission and vision statements
           </h1>
 
           <h3 class="text-lg sm:text-xl">
-            Our digital marketing agency helps businesses grow and succeed
-            online through a range of services including SEO, PPC, social media
-            marketing, and content creation.
+          
+We streamline supply chains with secure, end-to-end digital solutions—from customer-facing platforms to complex CRM systems—enhanced by business intelligence and backed by a team of professional experts. To be the leading provider of intelligent, secure digital infrastructure for supply chain innovation worldwide.
           </h3>
 
           <button
@@ -183,6 +210,9 @@
         </div>
 
         <div class="services-bottom gap-10 grid grid-cols-1 md:grid-cols-2">
+         
+         
+         
           <div
             class="services_card bg-[#f3f3f3] border-2 border-[black] border-b-8 h-[318px] items-center w-full flex flex-col sm:flex-row sm:justify-between p-10 rounded-[48px]"
           >
@@ -192,12 +222,13 @@
               <div class="flex flex-col">
                 <span
                   class="text-base sm:text-lg rounded-[10px] font-[600] md:text-2xl bg-[#b9ff66] w-fit p-1"
-                  >Search engine</span
+                  >Business Process Outsourcing
+                  </span
                 >
                 <h5
                   class="text-base sm:text-lg inline rounded-[10px] font-[600] md:text-2xl bg-[#b9ff66] w-fit p-1"
                 >
-                  optimization
+               
                 </h5>
                 <!-- <button>optimization</button> -->
               </div>
@@ -211,6 +242,8 @@
                 <h5 class="text-lg sm:text-xl font-[500]">Learn more</h5>
               </div>
             </div>
+
+
 
             <div
               class="card_img w-[60%] h-[50%] sm:h-auto sm:w-[30%] md:w-[40%]"
@@ -232,12 +265,12 @@
               <div class="flex flex-col">
                 <span
                   class="text-base sm:text-lg rounded-[10px] font-[600] md:text-2xl bg-[#fff] w-fit p-1"
-                  >Pay-per-click</span
+                  >Business Intelligence </span
                 >
                 <h5
                   class="text-base sm:text-lg inline rounded-[10px] font-[600] md:text-2xl bg-[#fff] w-fit p-1"
                 >
-                  advertising
+                
                 </h5>
                 <!-- <button>optimization</button> -->
               </div>
@@ -272,12 +305,12 @@
               <div class="flex flex-col">
                 <span
                   class="text-base sm:text-lg rounded-[10px] font-[600] md:text-2xl bg-[#fff] w-fit p-1"
-                  >Social Media</span
+                  >Programming</span
                 >
                 <h5
                   class="text-base sm:text-lg inline rounded-[10px] font-[600] md:text-2xl bg-[#fff] w-fit p-1"
                 >
-                  Marketing
+                 
                 </h5>
                 <!-- <button>optimization</button> -->
               </div>
@@ -312,12 +345,11 @@
               <div class="flex flex-col">
                 <span
                   class="text-base sm:text-lg rounded-[10px] font-[600] md:text-2xl bg-[#b9ff66] w-fit p-1"
-                  >Email</span
+                  >Network Security Solutions</span
                 >
                 <h5
                   class="text-base sm:text-lg inline rounded-[10px] font-[600] md:text-2xl bg-[#b9ff66] w-fit p-1"
                 >
-                  Marketing
                 </h5>
                 <!-- <button>optimization</button> -->
               </div>
@@ -352,12 +384,11 @@
               <div class="flex flex-col">
                 <span
                   class="text-base sm:text-lg rounded-[10px] font-[600] md:text-2xl bg-[#fff] w-fit p-1"
-                  >Content</span
+                  >Logistics</span
                 >
                 <h5
                   class="text-base sm:text-lg inline rounded-[10px] font-[600] md:text-2xl bg-[#fff] w-fit p-1"
                 >
-                  Creation
                 </h5>
                 <!-- <button>optimization</button> -->
               </div>
@@ -392,12 +423,11 @@
               <div class="flex flex-col">
                 <span
                   class="text-base sm:text-lg rounded-[10px] font-[600] md:text-2xl bg-[#b9ff66] w-fit p-1"
-                  >Content</span
+                  >Consulting</span
                 >
                 <h5
                   class="text-base sm:text-lg inline rounded-[10px] font-[600] md:text-2xl bg-[#b9ff66] w-fit p-1"
                 >
-                  Creation
                 </h5>
                 <!-- <button>optimization</button> -->
               </div>
@@ -483,9 +513,7 @@
             class="studies_card flex flex-col gap-8 w-full border-b sm:border-b-0 sm:border-r border-[#fff]"
           >
             <h5 class="text-base text-white sm:text-lg w-full sm:w-[80%]">
-              For a local restaurant, we implemented a targeted PPC campaign
-              that resulted in a 50% increase in website traffic and a 25%
-              increase in sales.
+              Organization of information in timely manner is the main traits of Accounting and Finance. Providing it in the meaningful way for decision-making is the job of the Business Intelligence. We have integrated CRM systems to 1C accounting program, which is predominantly used for bookkeeping and reporting in Central Asia.
             </h5>
             <a class="text-[#b9ff66] text-lg sm:text-xl" href="#"
               >Learn more <i class="fa-solid fa-arrow-right"></i>
@@ -496,9 +524,7 @@
             class="studies_card flex flex-col gap-8 w-full border-b sm:border-b-0 sm:border-r border-[#fff]"
           >
             <h5 class="text-base text-white sm:text-lg w-full sm:w-[80%]">
-              For a B2B software company, we developed an SEO strategy that
-              resulted in a first page ranking for key keywords and a 200%
-              increase in organic traffic.
+              The best way to start organizing your companies work is by implementing digitization of every operation of your staff, starting from main cash generator department to the human resources department. For five years, we have developed our own internal software and internal network so we could record each business action of our staff and help their colleagues to have timely information of the process..
             </h5>
             <a class="text-[#b9ff66] text-lg sm:text-xl" href="#"
               >Learn more <i class="fa-solid fa-arrow-right"></i>
@@ -509,9 +535,7 @@
             class="studies_card flex flex-col gap-8 w-full border-b sm:border-b-0 border-[#fff]"
           >
             <h5 class="text-base text-white sm:text-lg w-full sm:w-[80%]">
-              For a national retail chain, we created a social media marketing
-              campaign that increased followers by 25% and generated a 20%
-              increase in online sales.
+              Our experts have the solid experience of more than 20 years in the Logistics and Warehousing. We have carried out economically viable projects of organizing supply chain of US Military operations in Central Asia, UZ KOR GAZ Chemicals logistics, Nokia Network Solutions warehouse managements and many more.
             </h5>
             <a class="text-[#b9ff66] text-lg sm:text-xl" href="#"
               >Learn more <i class="fa-solid fa-arrow-right"></i>
@@ -718,319 +742,139 @@
     </section>
     <!-- Our Working Process finish -->
 
-    <!-- Team section -->
-    <section class="team-section mt-[40px] sm:mt-[100px]">
-      <div class="w-[90%] m-auto flex flex-col gap-8 sm:gap-10">
-        <div class="Team-top flex flex-col sm:flex-row gap-3 sm:gap-10">
-          <h2
-            class="bg-[#b9ff66] text-2xl md:text-3xl rounded-[10px] w-fit p-1 leading-0"
-          >
-            Team
-          </h2>
-          <h5
-            class="text-base font-[500] sm:text-lg md:text-xl w-full sm:w-[48%] leading-4"
-          >
-            Meet the skilled and experienced team behind our
-            <br class="hidden sm:flex" />
-            successful digital marketing strategies
-          </h5>
+        
+  <!-- Showcase about -->
+  <section class="showcase mt-[40px] sm:mt-[60px]">
+    <div class="w-[90%] m-auto bg-[#f3f3f3] gap-4 sm:gap-5 rounded-[20px] flex flex-col sm:flex-row sm:justify-between items-center p-10">
+         
+        <div class="showcase-left w-full  sm:w-[37%] h-[300px] md:h-[400px]">
+                <img class="w-full h-full" src="./imges/aboutshowcase.png" alt="">
         </div>
+
+        <div class="showcase-right w-full sm:w-[40%] flex flex-col  gap-3 sm:gap-6">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black ">IT - Information <br class="hidden sm:flex"> Technology</h2>
+                <!-- <h5 class="text-lg sm:text-xl md:text-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis repellat. Error quo at deserunt officiis voluptatibus rem unde tenetur?</h5> -->
+        </div>
+
+
+    </div>
+  </section>
+
+
+
+
+  
+    <!-- How we work start -->
+    <section class="mt-[40px] sm:mt-[70px]">
+      <div class="w-[90%] m-auto flex flex-col gap-4 sm:gap-8">
+        <div class="howowork-top flex flex-col sm:flex-row gap-3 sm:gap-5">
+          <h3
+            class="bg-[#b9ff66] rounded-[10px] font-[600] px-1 text-xl sm:text-3xl h-fit py-2 w-fit flex items-center justify-center"
+          >
+            How We Work : SEO Procces
+          </h3>
+          <p class="text-lg sm:text-xl font">
+            Our step-by-step SEO process ensures your website
+            <br class="hidden sm:flex" />
+            ranks higher, attracts more traffic, and drives lasting
+            <br class="hidden sm:flex" />
+            results.
+          </p>
+        </div>
+
+        <div class="howowork-bottom flex flex-col  items-center gap-3 sm:gap-7">
+          <div
+            class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+          >
+
+          <div class="star hidden sm:flex w-[16%]">01</div>
+
+            <div class="flex flex-col gap-4 sm:gap-7">
+                <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Website Audit & Analysis </h3>
+                <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptates sunt ipsa adipisci architecto, dignissimos velit assumenda voluptatum autem laboriosam!</p>
+            </div>
+
+          </div>
+
+          <div
+          class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+        >
+
+        <div class="star hidden sm:flex w-[16%]">02</div>
+
+          <div class="flex flex-col gap-4 sm:gap-7">
+              <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Keyword Research & Strategy </h3>
+              <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">Our team researches the most relevant and high-impact keywords for your business, ensuring that we target terms that drive qualified traffic.</p>
+          </div>
+
+        </div>
+
+
 
         <div
-          class="team-bottom grid grid-cols-1 gap-8 sm:gap-10 sm:gird-cols-2 md:grid-cols-3"
-        >
-          <div
-            class="team_card p-6 group cursor-pointer relative w-full h-[270px] border-[#000] border-b-8 rounded-[45px] borde-2 border sm:h-[300px] flex flex-col justify-between"
-          >
-            <img
-              class="absolute cursor-pointer group-hover:scale-125 transition-all duration-300 top-5 right-5"
-              src="./imges/linkedin.svg"
-              alt=""
-            />
+        class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+      >
 
-            <div
-              class="team_card_top border-b border-[#000] pb-8 flex gap-4 items-end"
-            >
-              <img src="./imges/teamlead.svg" alt="Team lead img" />
-              <h3 class="text-base sm:text-lg">
-                <span class="font-[600]">John Smith</span> <br />
-                CEO and Founder
-              </h3>
-            </div>
+      <div class="star hidden sm:flex w-[16%]">03</div>
 
-            <h4 class="text-lg sm:text-xl">
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </h4>
-          </div>
-
-          <div
-            class="team_card p-6 group cursor-pointer relative w-full h-[270px] border-[#000] border-b-8 rounded-[45px] borde-2 border sm:h-[300px] flex flex-col justify-between"
-          >
-            <img
-              class="absolute cursor-pointer group-hover:scale-125 transition-all duration-300 top-5 right-5"
-              src="./imges/linkedin.svg"
-              alt=""
-            />
-
-            <div
-              class="team_card_top border-b border-[#000] pb-8 flex gap-4 items-end"
-            >
-              <img src="./imges/teamlead.svg" alt="Team lead img" />
-              <h3 class="text-base sm:text-lg">
-                <span class="font-[600]">John Smith</span> <br />
-                CEO and Founder
-              </h3>
-            </div>
-
-            <h4 class="text-lg sm:text-xl">
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </h4>
-          </div>
-
-          <div
-            class="team_card p-6 group cursor-pointer relative w-full h-[270px] border-[#000] border-b-8 rounded-[45px] borde-2 border sm:h-[300px] flex flex-col justify-between"
-          >
-            <img
-              class="absolute cursor-pointer group-hover:scale-125 transition-all duration-300 top-5 right-5"
-              src="./imges/linkedin.svg"
-              alt=""
-            />
-
-            <div
-              class="team_card_top border-b border-[#000] pb-8 flex gap-4 items-end"
-            >
-              <img src="./imges/teamlead.svg" alt="Team lead img" />
-              <h3 class="text-base sm:text-lg">
-                <span class="font-[600]">John Smith</span> <br />
-                CEO and Founder
-              </h3>
-            </div>
-
-            <h4 class="text-lg sm:text-xl">
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </h4>
-          </div>
-
-          <div
-            class="team_card p-6 group cursor-pointer relative w-full h-[270px] border-[#000] border-b-8 rounded-[45px] borde-2 border sm:h-[300px] flex flex-col justify-between"
-          >
-            <img
-              class="absolute cursor-pointer group-hover:scale-125 transition-all duration-300 top-5 right-5"
-              src="./imges/linkedin.svg"
-              alt=""
-            />
-
-            <div
-              class="team_card_top border-b border-[#000] pb-8 flex gap-4 items-end"
-            >
-              <img src="./imges/teamlead.svg" alt="Team lead img" />
-              <h3 class="text-base sm:text-lg">
-                <span class="font-[600]">John Smith</span> <br />
-                CEO and Founder
-              </h3>
-            </div>
-
-            <h4 class="text-lg sm:text-xl">
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </h4>
-          </div>
-
-          <div
-            class="team_card p-6 group cursor-pointer relative w-full h-[270px] border-[#000] border-b-8 rounded-[45px] borde-2 border sm:h-[300px] flex flex-col justify-between"
-          >
-            <img
-              class="absolute cursor-pointer group-hover:scale-125 transition-all duration-300 top-5 right-5"
-              src="./imges/linkedin.svg"
-              alt=""
-            />
-
-            <div
-              class="team_card_top border-b border-[#000] pb-8 flex gap-4 items-end"
-            >
-              <img src="./imges/teamlead.svg" alt="Team lead img" />
-              <h3 class="text-base sm:text-lg">
-                <span class="font-[600]">John Smith</span> <br />
-                CEO and Founder
-              </h3>
-            </div>
-
-            <h4 class="text-lg sm:text-xl">
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </h4>
-          </div>
-
-          <div
-            class="team_card p-6 group cursor-pointer relative w-full h-[270px] border-[#000] border-b-8 rounded-[45px] borde-2 border sm:h-[300px] flex flex-col justify-between"
-          >
-            <img
-              class="absolute cursor-pointer group-hover:scale-125 transition-all duration-300 top-5 right-5"
-              src="./imges/linkedin.svg"
-              alt=""
-            />
-
-            <div
-              class="team_card_top border-b border-[#000] pb-8 flex gap-4 items-end"
-            >
-              <img src="./imges/teamlead.svg" alt="Team lead img" />
-              <h3 class="text-base sm:text-lg">
-                <span class="font-[600]">John Smith</span> <br />
-                CEO and Founder
-              </h3>
-            </div>
-
-            <h4 class="text-lg sm:text-xl">
-              10+ years of experience in digital marketing. Expertise in SEO,
-              PPC, and content strategy
-            </h4>
-          </div>
+        <div class="flex flex-col gap-4 sm:gap-7">
+            <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">On-Page Optimization </h3>
+            <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">We optimize your website’s structure, meta tags, and content to make it search engine-friendly, improving your visibility and relevance.</p>
         </div>
 
-        <button
-          class="flex self-end h-16 bg-[#191a23] w-full sm:w-[20%] hover:bg-[#fff] border-4 hover:border-[#b9ff66] hover:text-[#b9ff66] transition-all duration-300 items-center justify-center rounded-[20px] font-[500] text-[#fff] text-base sm:text-lg"
-        >
-          See all team
-        </button>
       </div>
-    </section>
-    <!-- Team section finish -->
-
-    <!-- Testimonials section start  -->
-    <section class="Testimonials-section mt-[40px] sm:mt-[100px]">
-      <div class="w-[90%] m-auto flex flex-col gap-7 sm:gap-10">
-        <div class="Testimonials-top flex flex-col sm:flex-row gap-3 sm:gap-10">
-          <h2
-            class="bg-[#b9ff66] text-2xl md:text-3xl rounded-[10px] w-fit p-1 leading-0"
-          >
-            Testimonials
-          </h2>
-          <h5
-            class="text-base font-[500] sm:text-lg md:text-xl w-full sm:w-[48%] leading-4"
-          >
-            Hear from Our Satisfied Clients: Read Our Testimonials
-            <br class="hidden sm:flex" />
-            to Learn More about Our Digital Marketing Services
-          </h5>
-        </div>
-
-        <div class="Testimonials-bottom bg-[#191a23] rounded-[30px] py-10">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div
-                  class="relative bg-transparent text-white border border-lime-400 rounded-xl p-6 shadow-lg"
-                >
-                  <p class="text-base sm:text-lg leading-relaxed font-light">
-                    "We have been working with Positivus for the past year and
-                    have seen a significant increase in website traffic and
-                    leads as a result of their efforts. The team is
-                  
-                  </p>
-                  <div class="mt-4">
-                    <p class="text-lime-400 font-semibold text-base">
-                      John Smith
-                    </p>
-                    <p class="text-sm text-gray-400">
-                      Marketing Director at XYZ Corp
-                    </p>
-                  </div>
-
-                  <!-- Custom speech bubble tail using a ::before style -->
-                  <div
-                    class="absolute left-10 -bottom-2 w-4 h-4 bg-[#191a23] border-l border-b border-lime-400 transform -rotate-45 shadow-md"
-                  ></div>
-                </div>
-              </div>
 
 
-              <div class="swiper-slide">
-                <div
-                  class="relative bg-transparent text-white border border-lime-400 rounded-xl p-6 shadow-lg"
-                >
-                  <p class="text-base sm:text-lg leading-relaxed font-light">
-                    "We have been working with Positivus for the past year and
-                    have seen a significant increase in website traffic and
-                    leads as a result of their efforts. The team is
-                  </p>
-                  <div class="mt-4">
-                    <p class="text-lime-400 font-semibold text-base">
-                      John Smith
-                    </p>
-                    <p class="text-sm text-gray-400">
-                      Marketing Director at XYZ Corp
-                    </p>
-                  </div>
 
-                  <!-- Custom speech bubble tail using a ::before style -->
-                  <div
-                    class="absolute left-10 -bottom-2 w-4 h-4 bg-[#191a23] border-l border-b border-lime-400 transform -rotate-45 shadow-md"
-                  ></div>
-                </div>
-              </div>
+      <div
+      class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+    >
 
-              <div class="swiper-slide">
-                <div
-                  class="relative bg-transparent text-white border border-lime-400 rounded-xl p-6 shadow-lg"
-                >
-                  <p class="text-base sm:text-lg leading-relaxed font-light">
-                    "We have been working with Positivus for the past year and
-                    have seen a significant increase in website traffic and
-                    leads as a result of their efforts. The team is
-                  </p>
-                  <div class="mt-4">
-                    <p class="text-lime-400 font-semibold text-base">
-                      John Smith
-                    </p>
-                    <p class="text-sm text-gray-400">
-                      Marketing Director at XYZ Corp
-                    </p>
-                  </div>
+    <div class="star hidden sm:flex w-[16%]">04</div>
 
-                  <!-- Custom speech bubble tail using a ::before style -->
-                  <div
-                    class="absolute left-10 -bottom-2 w-4 h-4 bg-[#191a23] border-l border-b border-lime-400 transform -rotate-45 shadow-md"
-                  ></div>
-                </div>
-              </div>
+      <div class="flex flex-col gap-4 sm:gap-7">
+          <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Content Creation & Optimization </h3>
+          <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">High-quality content is key to SEO. We create or refine content that engages your audience while aligning with search engine algorithms.</p>
+      </div>
 
-              <div class="swiper-slide">
-                <div
-                  class="relative bg-transparent text-white border border-lime-400 rounded-xl p-6 shadow-lg"
-                >
-                  <p class="text-base sm:text-lg leading-relaxed font-light">
-                    "We have been working with Positivus for the past year and
-                    have seen a significant increase in website traffic and
-                    leads as a result of their efforts. The team is
-                  </p>
-                  <div class="mt-4">
-                    <p class="text-lime-400 font-semibold text-base">
-                      John Smith
-                    </p>
-                    <p class="text-sm text-gray-400">
-                      Marketing Director at XYZ Corp
-                    </p>
-                  </div>
+    </div>
 
-                  <!-- Custom speech bubble tail using a ::before style -->
-                  <div
-                    class="absolute left-10 -bottom-2 w-4 h-4 bg-[#191a23] border-l border-b border-lime-400 transform -rotate-45 shadow-md"
-                  ></div>
-                </div>
-              </div>
 
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+
+
+    <div
+    class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+  >
+
+  <div class="star hidden sm:flex w-[16%]">05</div>
+
+    <div class="flex flex-col gap-4 sm:gap-7">
+        <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Link Building </h3>
+        <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">We develop a link-building strategy to acquire authoritative, relevant backlinks that boost your domain authority and search rankings.</p>
+    </div>
+
+  </div>
+
+
+  <div
+  class="howwork-item flex items-center gap-5 sm:gap-10  rounded-[20px] bg-[#f3f3f3] p-8 py-10 w-full"
+>
+
+<div class="star hidden sm:flex w-[16%]">06</div>
+
+  <div class="flex flex-col gap-4 sm:gap-7">
+      <h3 class = "text-lg sm:text-xl md:text-2xl lg:text-3xl font-[500]">Monitoring & Reporting </h3>
+      <p class = "text-base sm:text-lg md:text-xl w-full font-[500]  sm:text-[50%]">We continuously monitor performance, track rankings, and provide detailed reports, making data-driven adjustments to maintain and improve your results.</p>
+  </div>
+
+</div>
+
+
         </div>
       </div>
     </section>
-    <!-- Testimonials section finish  -->
+    <!-- How we work finish -->
+
 
 
 
@@ -1108,13 +952,6 @@
                   </div>
 
 
-                  <div class="flex flex-col sm:flex-row items-start sm:items-normal sm:items-end gap-2 sm:gap-6">
-                          <a class="text-white text-base sm:text-lg font-[500]" href="">About us</a>
-                          <a class="text-white text-base sm:text-lg font-[500]" href="">Services</a>
-                          <a class="text-white text-base sm:text-lg font-[500]" href="">Use Cases</a>
-                          <a class="text-white text-base sm:text-lg font-[500]" href="">Pricing</a>
-                          <a class="text-white text-base sm:text-lg font-[500]" href="">Blog</a>
-                  </div>
 
 
                   <div class="flex items-end gap-4">
@@ -1127,22 +964,7 @@
                 </div>
 
 
-                  <div class="footer-center flex flex-col gap-7 md:gap-8 md:flex-row items-center justify-between">
-
-                        <div class="footer-center-left w-full md:w-[45%] flex flex-col gap-1 sm:gap-2">
-                            <h3 class=" bg-[#b9ff66] text-lg font-[600] rounded-[10px] w-fit px-4 ">Contact us:</h3>
-                            <a class="text-base sm:text-lg text-white" href="mailto:info@izisol.uz">Email: info@izisol.uz</a>
-                            <a class="text-base sm:text-lg text-white" href="tel:+998947441415">Email: +99894 744 14 15</a>
-                            <a class="text-base sm:text-lg text-white" href="tel:+998947441415">5th floor, entrance E, Botyr Zakirov str 1 A/1, Tashkent</a>
-
-                            
-                        </div>
-                      <div class="footer-center-right gap-3 md:gap-7 w-full flex-col flex sm:justify-between sm:flex-row md:w-[45%] p-7 rounded-[20px] bg-[#292a32]">
-                            <input class="w-full border-2  h-10 md:h-16 pl-5 sm:w-[56%] rounded-[10px]" type="text" placeholder="Email...">
-                            <button class="flex items-center justify-center w-full sm:w-[40%] h-16 text-xl font-[500] bg-[#b9ff66] rounded-[10px]">Subscribe to news</button>
-                        </div>
-                  </div>
-
+                
 
 
                   <div class="footer-bottom flex flex-col md:flex-row gap-3 sm:gap-10 items-end sm:justify-between py-10 border-t border-[#fff] ">
@@ -1181,8 +1003,8 @@
       });
     </script>
 
-    <!-- VANTA.JS va THREE.JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    VANTA.JS va THREE.JS 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
 
      <script>
@@ -1195,7 +1017,7 @@
         minWidth: 200.0,
         skyColor: 0xdde7ea,
       });
-    </script>  -->
+    </script> 
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
